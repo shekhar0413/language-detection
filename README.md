@@ -11,10 +11,11 @@ For multi-language classification, we built a language detector to detect among 
 We also built a language detector based on the tri-gram language detection technique (code not included). Without optimizing on the parameters, we achieved an accuracy of 72%, much lower than the LSTM, which was expected since the ‘n-gram’ technique does not learn contextual information but is much simpler and computationally less expensive.
 
 LSTMS are typically used as a generative model for generating sequences of characters. In this project, we used LSTM models as language detectors. LSTMS are an implementation of RNNs which avoids the vanishing (exploding gradient) problem. The training set was the ‘Universal declaration of human rights’ in two languages, English and French.
+
 Packages/Libraries used: Keras
 Model Compilation settings: 
-	Single LSTM layer with 128 memory units
-	Input is the sliced sequences of length 40 (input shape is (40, len(charset))  - one hot encoding
+    Single LSTM layer with 128 memory units
+    Input is the sliced sequences of length 40 (input shape is (40, len(charset))  - one hot encoding
 Dense layer (len(charset)) as the output layer with softmax activation function since we wanted to predict the normalized probabilities of the characters as output
 Loss function: categorical cross-entropy
 Optimizer: RMSprop (usually a good choice for recurrent neural networks)
