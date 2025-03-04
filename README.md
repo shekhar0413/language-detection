@@ -4,7 +4,7 @@ In this project, we build a language specific RNN using LSTM units for generatin
 
 We trained the data on the text of the ‘Universal declaration of Human rights’ and then randomly sampled 5-character sequences from the test set to test the language detectors.
 
-For binary classification, with a window of length 40 and testing on 5-character sequences we achieved an AOC value of 81%. When we increased the test sequence length to 20 (i.e. allowed the model to work with more contextual information, the accuracy jumped to 97% and with a 30-character sequence we achieved near perfect classification.
+For binary classification, with a window of length 40 and testing on 5-character sequences we achieved an AOC value of 81%. When we increased the test sequence length to 20 (i.e. allowed the model to work with more contextual information), the accuracy jumped to 97% and with a 30-character sequence we achieved near perfect classification.
 
 For multi-language classification, we built a language detector to detect among multiple languages. With an input sequence length of 40, and a test sequence length of 20 the accuracy was 95%. We explored various tuning efficiencies, like early stopping of the training based on monitoring the validation loss.
 
