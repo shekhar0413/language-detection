@@ -15,11 +15,11 @@ LSTMS are typically used as a generative model for generating sequences of chara
 Packages/Libraries used: Keras
 
 Model Compilation settings:  
-&emsp;Single LSTM layer with 128 memory units  
-&emsp;Input is the sliced sequences of length 40 (input shape is (40, len(charset))  - one hot encoding  
-&emsp;Dense layer (len(charset)) as the output layer with softmax activation function to predict the normalized probabilities of the characters    
-&emsp;Loss function: categorical cross-entropy  
-&emsp;Optimizer: RMSprop (usually a good choice for recurrent neural networks)  
+- Single LSTM layer with 128 memory units  
+- Input is the sliced sequences of length 40 (input shape is (40, len(charset))  - one hot encoding  
+- Dense layer (len(charset)) as the output layer with softmax activation function to predict the normalized probabilities of the characters as output
+- Loss function: categorical cross-entropy  
+- Optimizer: RMSprop (usually a good choice for recurrent neural networks)  
 
 Train each language model separately (i.e. each model during the training was exposed to the text from one particular language only) on sequences of length 40. So essentially, the model during training was fed 40 character sequences while the target was the 41st character.
 
