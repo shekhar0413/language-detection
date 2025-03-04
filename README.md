@@ -13,6 +13,7 @@ We also built a language detector based on the tri-gram language detection techn
 LSTMS are typically used as a generative model for generating sequences of characters. In this project, we used LSTM models as language detectors. LSTMS are an implementation of RNNs which avoids the vanishing (exploding gradient) problem. The training set was the ‘Universal declaration of human rights’ in two languages, English and French.
 
 Packages/Libraries used: Keras
+
 Model Compilation settings: 
     Single LSTM layer with 128 memory units
     Input is the sliced sequences of length 40 (input shape is (40, len(charset))  - one hot encoding
