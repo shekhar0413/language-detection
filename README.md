@@ -1,6 +1,6 @@
 # language-detection
 
-In this project assignment, we build a language specific RNN using LSTM units for generating sequences of characters and then combine them into a single language detector. We experiment with binary language detection (English vs French) and multi-language detection (variable number of languages).
+In this project, we build a language specific RNN using LSTM units for generating sequences of characters and then combine them into a single language detector. We experiment with binary language detection (English vs French) and multi-language detection (variable number of languages).
 
 We trained the data on the text of the ‘Universal declaration of Human rights’ and then randomly sampled 5-character sequences from the test set to test the language detectors.
 
